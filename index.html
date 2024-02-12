@@ -27,14 +27,19 @@
                             <h2 class="card-title text-2xl font-bold ml-28">Triangle</h2>
                             <p class="text-lg font-semibold">Area (A) = 0.5 X b Xh</p>
                             <div class="mt-4">
-                                <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" placeholder="b">
+                                <input id="triangle-base" class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text"
+                                    placeholder="b">
                                 <span class="mx-2">cm</span>
-                                <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" id=""
+                                <input id="triangle-height" class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text"
                                     placeholder="h">
                                 <span>cm</span>
                             </div>
+                            <div >
+                                <p class="text-2xl font-bold ">Area: <span id="triangle-area"></span><span>cm <sup>2</sup></span></p>
+                            </div>
                             <div class="card-actions mt-8">
-                                <button onclick="calculateTriangleArea()" class="btn btn-primary text-xl w-full">Calculate</button>
+                                <button onclick="calculateTriangleArea()"
+                                    class="btn btn-primary text-xl w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -120,7 +125,7 @@
                         <figure class="mt-6"><img src="./images/ellipse.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                             <h2 class="card-title text-2xl font-bold ml-28">Ellipse</h2>
-                            <p class="text-lg font-semibold">Area (A) = 3.1416 x  x a x b</p>
+                            <p class="text-lg font-semibold">Area (A) = 3.1416 x x a x b</p>
                             <div class="mt-4">
                                 <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" placeholder="a">
                                 <span class="mx-2">cm</span>
@@ -139,13 +144,15 @@
                     <p class="text-xl font-bold">Area Calculation</p>
                     <br>
                     <hr>
-                    <div class="mt-2"><hr></div>
+                    <div class="mt-2">
+                        <hr>
+                    </div>
                 </div>
 
             </div>
         </section>
     </main>
- 
+
     <script src="./scripts/triangle-calculate.js"></script>
 
 </body>
