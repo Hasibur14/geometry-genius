@@ -10,7 +10,7 @@
     // calculation
     const pentagonArea = 0.5 *  perimeter * base;
 
-   const pentagonSpan  = document.getElementById('pentagon-area');
+   const pentagonSpan  = document.getElementById('ellipse-area');
    pentagonSpan.innerText =  pentagonArea;
 
     
