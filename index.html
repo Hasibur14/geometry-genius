@@ -35,7 +35,7 @@
                                 <span>cm</span>
                             </div>
                             <div >
-                                <p class="text-2xl font-bold ">Area: <span id="triangle-area"></span><span>cm <sup>2</sup></span></p>
+                                <p class="text-2xl font-bold ">Area: <span id="triangle-area"> 0  </span><span>cm <sup>2</sup></span></p>
                             </div>
                             <div class="card-actions mt-8">
                                 <button onclick="calculateTriangleArea()"
@@ -58,7 +58,7 @@
                                 <span>cm</span>
                             </div>
                             <div >
-                                <p class="text-2xl font-bold ">Area: <span id="rectangle-area"></span><span>cm <sup>2</sup></span></p>
+                                <p class="text-2xl font-bold ">Area: <span id="rectangle-area"> 0  </span><span>cm <sup>2</sup></span></p>
                             </div>
                             <div class="card-actions mt-8">
                                 <button onclick="calculateRectangleArea()" class="btn btn-primary text-xl w-full">Calculate</button>
@@ -80,7 +80,7 @@
                                 <span>cm</span>
                             </div>
                             <div >
-                                <p class="text-2xl font-bold ">Area: <span id="parallelogram-area"></span><span>cm <sup>2</sup></span></p>
+                                <p class="text-2xl font-bold ">Area: <span id="parallelogram-area"> 0  </span><span>cm <sup>2</sup></span></p>
                             </div>
                             <div class="card-actions mt-8">
                                 <button onclick="calculateParallelogramArea()" class="btn btn-primary text-xl w-full">Calculate</button>
@@ -95,14 +95,17 @@
                             <h2 class="card-title text-2xl font-bold ml-28">Rhombus</h2>
                             <p class="text-lg font-semibold">Area (A) = 0.5 x d1 x d2</p>
                             <div class="mt-4">
-                                <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" placeholder="d1">
+                                <input id="rhombus-d1" class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" placeholder="d1">
                                 <span class="mx-2">cm</span>
-                                <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" id=""
+                                <input  class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" id="rhombus-d2"
                                     placeholder="d2">
                                 <span>cm</span>
                             </div>
+                            <div >
+                                <p class="text-2xl font-bold ">Area: <span id="rhombus-area"> 0  </span><span>cm <sup>2</sup></span></p>
+                            </div>
                             <div class="card-actions mt-8">
-                                <button class="btn btn-primary text-xl w-full">Calculate</button>
+                                <button onclick="calculateRhombusArea()" class="btn btn-primary text-xl w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -161,6 +164,8 @@
 
     <script src="./scripts/triangle-calculate.js"></script>
     <script src="./scripts/rectangle-calculate.js"></script>
+    <script src="./scripts/parallelogram-calculate.js"></script>
+    <script src="./scripts/rhombus-calculate.js"></script>
 
 </body>
 
