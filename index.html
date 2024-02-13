@@ -117,14 +117,17 @@
                             <h2 class="card-title text-2xl font-bold ml-28">Pentagon</h2>
                             <p class="text-lg font-semibold">Area (A) = 0.5 x p x b</p>
                             <div class="mt-4">
-                                <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" placeholder="p">
+                                <input id="pentagon-perimeter" class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" placeholder="p">
                                 <span class="mx-2">cm</span>
-                                <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" id=""
+                                <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" id="pentagon-base"
                                     placeholder="b">
                                 <span>cm</span>
                             </div>
+                            <div >
+                                <p class="text-2xl font-bold ">Area: <span id="pentagon-area"> 0  </span><span>cm <sup>2</sup></span></p>
+                            </div>
                             <div class="card-actions mt-8">
-                                <button class="btn btn-primary text-xl w-full">Calculate</button>
+                                <button onclick="calculatePentagonArea()" class="btn btn-primary text-xl w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -134,13 +137,17 @@
                         <figure class="mt-6"><img src="./images/ellipse.png" alt="Shoes" /></figure>
                         <div class="card-body text-center">
                             <h2 class="card-title text-2xl font-bold ml-28">Ellipse</h2>
-                            <p class="text-lg font-semibold">Area (A) = 3.1416 x x a x b</p>
+                            <p class="text-lg font-semibold">Area (A) = π x
+                             a x b</p>
                             <div class="mt-4">
                                 <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" placeholder="a">
                                 <span class="mx-2">cm</span>
                                 <input class="w-28 text-2xl p-2 rounded-md bg-gray-100" type="text" id=""
                                     placeholder="b">
                                 <span>cm</span>
+                            </div>
+                            <div >
+                                <p class="text-2xl font-bold ">Area: <span id="rhombus-area"> 0  </span><span>cm <sup>2</sup></span></p>
                             </div>
                             <div class="card-actions mt-8">
                                 <button class="btn btn-primary text-xl w-full">Calculate</button>
@@ -166,6 +173,8 @@
     <script src="./scripts/rectangle-calculate.js"></script>
     <script src="./scripts/parallelogram-calculate.js"></script>
     <script src="./scripts/rhombus-calculate.js"></script>
+    <script src="./scripts/pentagon-calculate.js"></script>
+    <script src="./scripts/"></script>
 
 </body>
 

@@ -15,7 +15,6 @@ function getRhombusValue(value){
     return inputValue;
 }
 
-
 function setInnerText(elementId,area){
     const element = document.getElementById(elementId);
     element.innerText = area;
