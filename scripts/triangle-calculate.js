@@ -11,8 +11,6 @@ const triangleHeight = parseFloat(triangleHeightText);
 
 // calculate triangle Area
 const triangleArea = 0.5 * triangleBase * triangleHeight;
-console.log(triangleArea);
-
 
 // display triangle Area
 const  triangleAreaSpan = document.getElementById('triangle-area');
